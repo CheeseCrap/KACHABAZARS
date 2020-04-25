@@ -9,3 +9,6 @@ kpca: src/kpca.cpp
 	$(CPP) $(CFLAGS) $(INC) src/kpca.cpp ${LIBS} -o bin/kpca
 
 clean:
+	rm bin/kpca data/transformed_*.csv data/eigenvectors_*.csv *.png &> /dev/null
+
+test:
