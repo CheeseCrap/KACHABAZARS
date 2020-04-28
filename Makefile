@@ -12,3 +12,6 @@ clean:
 	rm bin/kpca data/transformed_*.csv data/eigenvectors_*.csv *.png &> /dev/null
 
 test:
+	bin/kpca
+	@echo "Plotting data using R..."
+	src/plot.R
