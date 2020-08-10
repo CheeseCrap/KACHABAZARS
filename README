@@ -7,3 +7,5 @@ Uses the covariance/eigendecomposition method:
 http://en.wikipedia.org/wiki/Principal_component_analysis#Computing_PCA_using_the_covariance_method
 
 Current kernels are RBF and polynomial.
+
+Buil
