@@ -11,4 +11,6 @@ Current kernels are RBF and polynomial.
 Build
 -----
 
-Install Eigen, e.g
+Install Eigen, e.g.:
+
+sudo 
