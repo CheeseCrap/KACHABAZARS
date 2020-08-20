@@ -13,4 +13,4 @@ Build
 
 Install Eigen, e.g.:
 
-sudo apt-get install libei
+sudo apt-get install libeigen3-dev
