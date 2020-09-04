@@ -15,4 +15,4 @@ Install Eigen, e.g.:
 
 sudo apt-get install libeigen3-dev
 
-or download from http://eigen.tuxfamily
+or download from http://eigen.tuxfamily.org/
