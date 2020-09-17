@@ -19,4 +19,4 @@ or download from http://eigen.tuxfamily.org/.
 
 Make sure the include path is set right in the Makefile.
 
-Co
+Compile
