@@ -17,4 +17,4 @@ sudo apt-get install libeigen3-dev
 
 or download from http://eigen.tuxfamily.org/.
 
-Make sure the include path is set right in the Mak
+Make sure the include path is set right in the Makefile
