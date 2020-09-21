@@ -19,4 +19,6 @@ or download from http://eigen.tuxfamily.org/.
 
 Make sure the include path is set right in the Makefile.
 
-Compile with 'mak
+Compile with 'make'.
+
+R
