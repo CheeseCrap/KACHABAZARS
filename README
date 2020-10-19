@@ -24,4 +24,4 @@ Compile with 'make'.
 Run
 ---
 
-Run with 'make te
+Run with 'make test', or
