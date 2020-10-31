@@ -26,4 +26,4 @@ Run
 
 Run with 'make test', or:
 
-bi
+bin/kpca
