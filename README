@@ -28,4 +28,4 @@ Run with 'make test', or:
 
 bin/kpca
 
-Input file format is a comma delimited n X p data matrix 
+Input file format is a comma delimited n X p data matrix (n obs
