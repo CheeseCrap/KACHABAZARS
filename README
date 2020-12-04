@@ -28,4 +28,6 @@ Run with 'make test', or:
 
 bin/kpca
 
-Input file format is a comma delimited n X p data matrix (n observations, p variables), e.
+Input file format is a comma delimited n X p data matrix (n observations, p variables), e.g.:
+
+32
