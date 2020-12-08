@@ -31,4 +31,4 @@ bin/kpca
 Input file format is a comma delimited n X p data matrix (n observations, p variables), e.g.:
 
 32.0,26.0,51.0,12.0
-17.0,
+17.0,13.0
