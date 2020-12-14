@@ -36,4 +36,5 @@ Input file format is a comma delimited n X p data matrix (n observations, p vari
 3.0,72.0,72.0,67.0
 10.0,63.0,35.0,34.0
 
-Outpu
+Output
+----
