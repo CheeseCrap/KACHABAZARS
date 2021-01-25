@@ -48,4 +48,5 @@ wikipedia_Polynomial_transformed.png
 stdout:
 
 Regular PCA (data/test.data):
-Input dat
+Input data:
+32 26 51
