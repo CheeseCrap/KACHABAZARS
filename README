@@ -87,4 +87,4 @@ PC 3: Eigenvalue: 135.402	(0.080 of variance, cumulative =  1.000)
 PC 4: Eigenvalue: 0.721744	(0.000 of variance, cumulative =  1.000)
 
 Sorted eigenvectors:
- 0.201491 
+ 0.201491 -0.42624
