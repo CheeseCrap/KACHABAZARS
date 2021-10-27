@@ -100,4 +100,4 @@ Transformed data:
 -75.8841 -6.75481  4.97735  -24.924
 
 Kernel PCA (data/wikipedia.data) - RBF kernel, gamma = 0.001:
-Sorted eig
+Sorted eigenvalues
