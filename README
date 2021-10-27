@@ -101,4 +101,4 @@ Transformed data:
 
 Kernel PCA (data/wikipedia.data) - RBF kernel, gamma = 0.001:
 Sorted eigenvalues:
-P
+PC 1: Ei
