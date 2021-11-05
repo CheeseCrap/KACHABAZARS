@@ -101,4 +101,5 @@ Transformed data:
 
 Kernel PCA (data/wikipedia.data) - RBF kernel, gamma = 0.001:
 Sorted eigenvalues:
-PC 1: Eigenvalue: 145.3	(0.931 of variance, cumulative =  0.
+PC 1: Eigenvalue: 145.3	(0.931 of variance, cumulative =  0.931)
+PC
