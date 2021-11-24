@@ -103,4 +103,4 @@ Kernel PCA (data/wikipedia.data) - RBF kernel, gamma = 0.001:
 Sorted eigenvalues:
 PC 1: Eigenvalue: 145.3	(0.931 of variance, cumulative =  0.931)
 PC 2: Eigenvalue: 6.68255	(0.043 of variance, cumulative =  0.974)
-PC 3: Eigenvalue: 3.66329	(0.023 of variance, cumulative =
+PC 3: Eigenvalue: 3.66329	(0.023 of variance, cumulative =  0.9
