@@ -118,4 +118,4 @@ Kernel PCA (data/wikipedia.data) - Polynomial kernel, order = 2, constant = 1:
 Sorted eigenvalues:
 PC 1: Eigenvalue: 176542	(0.548 of variance, cumulative =  0.548)
 PC 2: Eigenvalue: 79802.3	(0.248 of variance, cumulative =  0.795)
-PC 3: Eigenval
+PC 3: Eigenvalue: 54
