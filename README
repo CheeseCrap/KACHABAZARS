@@ -129,4 +129,6 @@ Written file data/eigenvectors_Polynomial_data.csv
 Written file data/transformed_Polynomial_data.csv
 
 Plotting data using R...
-src/plot.
+src/plot.R
+
+B
