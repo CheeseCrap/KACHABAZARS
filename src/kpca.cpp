@@ -19,3 +19,12 @@ public:
 	void set_kernel(const int i){kernel_type = i;};	
 	void set_normalise(const int i){normalise = i;};
 	void set_gamma(const double i){gamma = i;};
+	void set_constant(const double i){constant = i;};
+	void set_order(const double i){order = i;};
+	MatrixXd& get_transformed(){return transformed;}	
+	void run_pca();
+	void run_kpca();
+	void print();
+	void write_transformed(string);
+	void write_eigenvectors(string);
+private:
