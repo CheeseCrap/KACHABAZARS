@@ -35,3 +35,8 @@ private:
 	double gamma, constant, order;
 
 };
+
+void PCA::load_data(const char* data, char sep){
+
+	// Read data
+	unsigned int row = 0;
