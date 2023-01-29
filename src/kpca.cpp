@@ -28,3 +28,10 @@ public:
 	void write_transformed(string);
 	void write_eigenvectors(string);
 private:
+	double kernel(const VectorXd& a, const VectorXd& b);
+	MatrixXd X, Xcentered, C, K, eigenvectors, transformed;
+	VectorXd eigenvalues, cumulative;
+	unsigned int components, kernel_type, normalise;
+	double gamma, constant, order;
+
+};
