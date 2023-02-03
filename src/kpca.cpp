@@ -40,3 +40,7 @@ void PCA::load_data(const char* data, char sep){
 
 	// Read data
 	unsigned int row = 0;
+	ifstream file(data);
+	if(file.is_open()){
+		string line,token;
+		while(getline(file, line)){
