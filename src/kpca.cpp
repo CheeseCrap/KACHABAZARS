@@ -44,3 +44,10 @@ void PCA::load_data(const char* data, char sep){
 	if(file.is_open()){
 		string line,token;
 		while(getline(file, line)){
+			stringstream tmp(line);
+			unsigned int col = 0;
+			while(getline(tmp, token, sep)){
+				if(X.rows() < row+1){
+					X.conservativeResize(row+1,X.cols());
+				}
+				if(X.cols() < col+1){
