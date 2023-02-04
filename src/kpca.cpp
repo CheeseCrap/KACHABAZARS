@@ -53,3 +53,5 @@ void PCA::load_data(const char* data, char sep){
 				if(X.cols() < col+1){
 					X.conservativeResize(X.rows(),col+1);
 				}
+				X(row,col) = atof(token.c_str());
+				col++;
