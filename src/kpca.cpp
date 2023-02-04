@@ -51,3 +51,5 @@ void PCA::load_data(const char* data, char sep){
 					X.conservativeResize(row+1,X.cols());
 				}
 				if(X.cols() < col+1){
+					X.conservativeResize(X.rows(),col+1);
+				}
