@@ -55,3 +55,10 @@ void PCA::load_data(const char* data, char sep){
 				}
 				X(row,col) = atof(token.c_str());
 				col++;
+			}
+			row++;
+		}
+		file.close();
+		Xcentered.resize(X.rows(),X.cols());
+	}else{
+		cout << "Failed to read file " << data << endl;
