@@ -62,3 +62,6 @@ void PCA::load_data(const char* data, char sep){
 		Xcentered.resize(X.rows(),X.cols());
 	}else{
 		cout << "Failed to read file " << data << endl;
+	}
+
+}
