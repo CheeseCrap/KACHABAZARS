@@ -65,3 +65,9 @@ void PCA::load_data(const char* data, char sep){
 	}
 
 }
+
+double PCA::kernel(const VectorXd& a, const VectorXd& b){
+
+	/*
+		Kernels
+		1 = RBF
