@@ -71,3 +71,8 @@ double PCA::kernel(const VectorXd& a, const VectorXd& b){
 	/*
 		Kernels
 		1 = RBF
+		2 = Polynomial
+		TODO - add some of these these:
+		http://crsouza.blogspot.co.uk/2010/03/kernel-functions-for-machine-learning.html	
+
+	*/
