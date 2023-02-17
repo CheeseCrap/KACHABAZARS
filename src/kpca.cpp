@@ -76,3 +76,5 @@ double PCA::kernel(const VectorXd& a, const VectorXd& b){
 		http://crsouza.blogspot.co.uk/2010/03/kernel-functions-for-machine-learning.html	
 
 	*/
+	switch(kernel_type){
+	    case 2  :
