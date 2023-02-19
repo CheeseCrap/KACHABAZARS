@@ -89,3 +89,7 @@ void PCA::run_kpca(){
 
 	// Fill kernel matrix
 	K.resize(X.rows(),X.rows());
+	for(unsigned int i = 0; i < X.rows(); i++){
+		for(unsigned int j = i; j < X.rows(); j++){
+			K(i,j) = K(j,i) = kernel(X.row(i),X.row(j));
+			//printf("k(%i,%i) = %f\n",i,j,K(i,j));
