@@ -86,3 +86,6 @@ double PCA::kernel(const VectorXd& a, const VectorXd& b){
 }
 
 void PCA::run_kpca(){
+
+	// Fill kernel matrix
+	K.resize(X.rows(),X.rows());
