@@ -93,3 +93,11 @@ void PCA::run_kpca(){
 		for(unsigned int j = i; j < X.rows(); j++){
 			K(i,j) = K(j,i) = kernel(X.row(i),X.row(j));
 			//printf("k(%i,%i) = %f\n",i,j,K(i,j));
+		}	
+	}	
+	//cout << endl << K << endl;
+
+	EigenSolver<MatrixXd> edecomp(K);
+	eigenvalues = edecomp.eigenvalues().real();
+	eigenvectors = edecomp.eigenvectors().real();
+	cumulative.resize(eigenvalues.rows());
