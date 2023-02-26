@@ -101,3 +101,7 @@ void PCA::run_kpca(){
 	eigenvalues = edecomp.eigenvalues().real();
 	eigenvectors = edecomp.eigenvectors().real();
 	cumulative.resize(eigenvalues.rows());
+	vector<pair<double,VectorXd> > eigen_pairs; 
+	double c = 0.0; 
+	for(unsigned int i = 0; i < eigenvectors.cols(); i++){
+		if(normalise){
