@@ -118,3 +118,10 @@ void PCA::run_kpca(){
 		cumulative(i) = c;
 		eigenvectors.col(i) = eigen_pairs[i].second;
 	}
+	transformed.resize(X.rows(),components);
+
+	for(unsigned int i = 0; i < X.rows(); i++){
+		for(unsigned int j = 0; j < components; j++){
+			for (int k = 0; k < K.rows(); k++){
+                transformed(i,j) += K(i,k) * eigenvectors(k,j);
+		 	}
