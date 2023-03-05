@@ -125,3 +125,9 @@ void PCA::run_kpca(){
 			for (int k = 0; k < K.rows(); k++){
                 transformed(i,j) += K(i,k) * eigenvectors(k,j);
 		 	}
+		}
+	}	
+
+	/*
+	cout << "Input data:" << endl << X << endl << endl;
+	cout << "Centered data:"<< endl << Xcentered << endl << endl;
