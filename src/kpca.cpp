@@ -131,3 +131,9 @@ void PCA::run_kpca(){
 	/*
 	cout << "Input data:" << endl << X << endl << endl;
 	cout << "Centered data:"<< endl << Xcentered << endl << endl;
+	cout << "Centered kernel matrix:" << endl << Kcentered << endl << endl;
+	cout << "Eigenvalues:" << endl << eigenvalues << endl << endl;	
+	cout << "Eigenvectors:" << endl << eigenvectors << endl << endl;	
+	*/
+	cout << "Sorted eigenvalues:" << endl;
+	for(unsigned int i = 0; i < eigenvalues.rows(); i++){
