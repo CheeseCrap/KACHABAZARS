@@ -137,3 +137,8 @@ void PCA::run_kpca(){
 	*/
 	cout << "Sorted eigenvalues:" << endl;
 	for(unsigned int i = 0; i < eigenvalues.rows(); i++){
+		if(eigenvalues(i) > 0){
+			cout << "PC " << i+1 << ": Eigenvalue: " << eigenvalues(i);
+			printf("\t(%3.3f of variance, cumulative =  %3.3f)\n",eigenvalues(i)/eigenvalues.sum(),cumulative(i)/eigenvalues.sum());
+		}
+	}
