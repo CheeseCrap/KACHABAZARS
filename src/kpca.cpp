@@ -142,3 +142,6 @@ void PCA::run_kpca(){
 			printf("\t(%3.3f of variance, cumulative =  %3.3f)\n",eigenvalues(i)/eigenvalues.sum(),cumulative(i)/eigenvalues.sum());
 		}
 	}
+	cout << endl;
+	//cout << "Sorted eigenvectors:" << endl << eigenvectors << endl << endl;	
+	//cout << "Transformed data:" << endl << transformed << endl << endl;	
