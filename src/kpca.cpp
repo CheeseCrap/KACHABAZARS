@@ -148,3 +148,12 @@ void PCA::run_kpca(){
 }
 
 void PCA::run_pca(){
+
+	// http://stackoverflow.com/questions/15138634/eigen-is-there-an-inbuilt-way-to-calculate-sample-covariance
+	Xcentered = X.rowwise() - X.colwise().mean();	
+	C = (Xcentered.adjoint() * Xcentered) / double(X.rows());
+	EigenSolver<MatrixXd> edecomp(C);
+	eigenvalues = edecomp.eigenvalues().real();
+	eigenvectors = edecomp.eigenvectors().real();
+	cumulative.resize(eigenvalues.rows());
+	vector<pair<double,VectorXd> > eigen_pairs; 
