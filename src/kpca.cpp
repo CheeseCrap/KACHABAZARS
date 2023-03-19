@@ -146,3 +146,5 @@ void PCA::run_kpca(){
 	//cout << "Sorted eigenvectors:" << endl << eigenvectors << endl << endl;	
 	//cout << "Transformed data:" << endl << transformed << endl << endl;	
 }
+
+void PCA::run_pca(){
