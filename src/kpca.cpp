@@ -169,3 +169,8 @@ void PCA::run_pca(){
 	sort(eigen_pairs.begin(),eigen_pairs.end(), [](const pair<double,VectorXd> a, const pair<double,VectorXd> b) -> bool {return (a.first > b.first);} );
 	for(unsigned int i = 0; i < eigen_pairs.size(); i++){
 		eigenvalues(i) = eigen_pairs[i].first;
+		c += eigenvalues(i);
+		cumulative(i) = c;
+		eigenvectors.col(i) = eigen_pairs[i].second;
+	}
+	transformed = Xcentered * eigenvectors;
