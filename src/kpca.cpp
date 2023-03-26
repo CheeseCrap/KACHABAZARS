@@ -178,3 +178,9 @@ void PCA::run_pca(){
 }
 
 void PCA::print(){
+
+	cout << "Input data:" << endl << X << endl << endl;
+	cout << "Centered data:"<< endl << Xcentered << endl << endl;
+	cout << "Covariance matrix:" << endl << C << endl << endl;
+	cout << "Eigenvalues:" << endl << eigenvalues << endl << endl;	
+	cout << "Eigenvectors:" << endl << eigenvectors << endl << endl;	
