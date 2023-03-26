@@ -157,3 +157,10 @@ void PCA::run_pca(){
 	eigenvectors = edecomp.eigenvectors().real();
 	cumulative.resize(eigenvalues.rows());
 	vector<pair<double,VectorXd> > eigen_pairs; 
+	double c = 0.0; 
+	for(unsigned int i = 0; i < eigenvectors.cols(); i++){
+		if(normalise){
+			double norm = eigenvectors.col(i).norm();
+			eigenvectors.col(i) /= norm;
+		}
+		eigen_pairs.push_back(make_pair(eigenvalues(i),eigenvectors.col(i)));
