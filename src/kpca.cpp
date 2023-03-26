@@ -174,3 +174,7 @@ void PCA::run_pca(){
 		eigenvectors.col(i) = eigen_pairs[i].second;
 	}
 	transformed = Xcentered * eigenvectors;
+
+}
+
+void PCA::print(){
