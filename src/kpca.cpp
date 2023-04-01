@@ -194,3 +194,8 @@ void PCA::print(){
 	cout << endl;
 	cout << "Sorted eigenvectors:" << endl << eigenvectors << endl << endl;	
 	cout << "Transformed data:" << endl << X * eigenvectors << endl << endl;	
+	//cout << "Transformed centred data:" << endl << transformed << endl << endl;	
+
+}
+
+void PCA::write_transformed(string file){
