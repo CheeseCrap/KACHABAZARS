@@ -203,3 +203,10 @@ void PCA::write_transformed(string file){
 	ofstream outfile(file);
 	for(unsigned int i = 0; i < transformed.rows(); i++){
 		for(unsigned int j = 0; j < transformed.cols(); j++){
+			outfile << transformed(i,j);
+			if(j != transformed.cols()-1) outfile << ",";
+		}	
+		outfile << endl;
+	}
+	outfile.close();
+	cout << "Written file " << file << endl;
