@@ -199,3 +199,7 @@ void PCA::print(){
 }
 
 void PCA::write_transformed(string file){
+
+	ofstream outfile(file);
+	for(unsigned int i = 0; i < transformed.rows(); i++){
+		for(unsigned int j = 0; j < transformed.cols(); j++){
