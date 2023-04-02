@@ -212,3 +212,8 @@ void PCA::write_transformed(string file){
 	cout << "Written file " << file << endl;
 
 }	
+
+void PCA::write_eigenvectors(string file){
+
+	ofstream outfile(file);
+	for(unsigned int i = 0; i < eigenvectors.rows(); i++){
