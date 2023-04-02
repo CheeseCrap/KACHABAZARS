@@ -217,3 +217,10 @@ void PCA::write_eigenvectors(string file){
 
 	ofstream outfile(file);
 	for(unsigned int i = 0; i < eigenvectors.rows(); i++){
+		for(unsigned int j = 0; j < eigenvectors.cols(); j++){
+			outfile << eigenvectors(i,j);
+			if(j != eigenvectors.cols()-1) outfile << ",";
+		}	
+		outfile << endl;
+	}
+	outfile.close();
