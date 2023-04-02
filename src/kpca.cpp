@@ -224,3 +224,6 @@ void PCA::write_eigenvectors(string file){
 		outfile << endl;
 	}
 	outfile.close();
+	cout << "Written file " << file << endl;
+
+}	
