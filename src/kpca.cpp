@@ -210,3 +210,5 @@ void PCA::write_transformed(string file){
 	}
 	outfile.close();
 	cout << "Written file " << file << endl;
+
+}	
