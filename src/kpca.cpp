@@ -227,3 +227,10 @@ void PCA::write_eigenvectors(string file){
 	cout << "Written file " << file << endl;
 
 }	
+
+int main(int argc, const char* argv[]){
+
+	/*
+	if(argc < 2){
+		cout << "Usage:\n" << argv[0] << " <DATA>" << endl;
+		cout << "File format:\nX1,X2, ... Xn\n";
