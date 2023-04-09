@@ -234,3 +234,9 @@ int main(int argc, const char* argv[]){
 	if(argc < 2){
 		cout << "Usage:\n" << argv[0] << " <DATA>" << endl;
 		cout << "File format:\nX1,X2, ... Xn\n";
+		return(0);
+	}
+	*/
+
+	PCA* P = new PCA();
+	P->load_data("data/test.data");
