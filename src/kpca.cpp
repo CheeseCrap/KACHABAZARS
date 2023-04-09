@@ -240,3 +240,10 @@ int main(int argc, const char* argv[]){
 
 	PCA* P = new PCA();
 	P->load_data("data/test.data");
+	P->run_pca();
+	cout << "Regular PCA (data/test.data):" << endl;
+	P->run_pca();
+	P->print();
+	delete P;
+
+	P = new PCA();
