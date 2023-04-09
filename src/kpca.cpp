@@ -247,3 +247,9 @@ int main(int argc, const char* argv[]){
 	delete P;
 
 	P = new PCA();
+	P->load_data("data/wikipedia.data");
+	cout << "Kernel PCA (data/wikipedia.data) - RBF kernel, gamma = 0.001:" << endl;
+	P->run_kpca();
+	P->write_eigenvectors("data/eigenvectors_RBF_data.csv");
+	P->write_transformed("data/transformed_RBF_data.csv");
+	cout << endl;	
