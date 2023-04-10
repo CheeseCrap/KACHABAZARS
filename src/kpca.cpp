@@ -253,3 +253,11 @@ int main(int argc, const char* argv[]){
 	P->write_eigenvectors("data/eigenvectors_RBF_data.csv");
 	P->write_transformed("data/transformed_RBF_data.csv");
 	cout << endl;	
+	delete P;
+
+	P = new PCA();
+	P->load_data("data/wikipedia.data");
+	P->set_kernel(2);
+	P->set_constant(1);
+	P->set_order(2);
+	cout << "Kernel PCA (data/wikipedia.data) - Polynomial kernel, order = 2, constant = 1:" << endl;
