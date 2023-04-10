@@ -261,3 +261,6 @@ int main(int argc, const char* argv[]){
 	P->set_constant(1);
 	P->set_order(2);
 	cout << "Kernel PCA (data/wikipedia.data) - Polynomial kernel, order = 2, constant = 1:" << endl;
+	P->run_kpca();
+	P->write_eigenvectors("data/eigenvectors_Polynomial_data.csv");
+	P->write_transformed("data/transformed_Polynomial_data.csv");	
