@@ -264,3 +264,9 @@ int main(int argc, const char* argv[]){
 	P->run_kpca();
 	P->write_eigenvectors("data/eigenvectors_Polynomial_data.csv");
 	P->write_transformed("data/transformed_Polynomial_data.csv");	
+	cout << endl;	
+	delete P;
+
+	return(0);
+
+}
